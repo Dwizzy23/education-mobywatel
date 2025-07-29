@@ -26,4 +26,55 @@
     pre {
       background: #f0f0f0;
       padding: 1em;
-      border
+      border-radius: 8px;
+    }
+    .signal {
+      margin-top: 2em;
+      text-align: center;
+    }
+    .signal a {
+      font-size: 1.2em;
+      text-decoration: none;
+      background: #3a76f0;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 8px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>📦 Dodaj do ekranu głównego</h1>
+
+  <div class="section">
+    <div class="platform">🍎 iOS (iPhone/Apple):</div>
+    <ol>
+      <li>Upewnij się, że korzystasz z Safari</li>
+      <li>Wejdź w: <b>order.mobywatel.netfily.app</b></li>
+      <li>Naciśnij <b>Udostępnij "⬆️"</b> → „<b>Do ekranu początkowego</b>”</li>
+    </ol>
+
+    <div class="platform">🤖 Android:</div>
+    <ol>
+      <li>Upewnij się, że korzystasz z Google Chrome</li>
+      <li>Wejdź w: <b>order.mobywatel.netfily.app</b></li>
+      <li>Kliknij <b>trzy kropki "⁝"</b> → „<b>Dodaj do ekranu głównego</b>”</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>💳 Zamów teraz:</h2>
+    <stripe-buy-button
+      buy-button-id="buy_btn_1RqMVRCaRTl3PKyZthMbVHAq"
+      publishable-key="pk_live_51RWg2ZCaRTl3PKyZbEhuD3L7oieq1ErbMHi3zo1OUuvjysLLtanQSpa4s7GarhzP8fU7GXYk9g1dQtd2Bfm9BQVw00ETJJW3Rl"
+    ></stripe-buy-button>
+  </div>
+
+  <div class="signal">
+    <p>📲 Napisz do mnie na Signal:</p>
+    <a href="https://signal.group/#CjQKIAsMiyPP0SOznkSHMFozHkF-4INF3lK3AJek2lndf66sEhByyU96tODgRy-kFAeS67fD" target="_blank">☁️ Signal ☁️</a>
+  </div>
+
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+</body>
+</html>
